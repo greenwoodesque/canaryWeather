@@ -190,8 +190,9 @@
 				1743EB4320BFD3C600D9A68D /* Helpers and Extensions */,
 				175EF83720BB23990073546F /* ViewControllers */,
 				175EF83620BA04F90073546F /* Model */,
-				175EF80020B9DB7A0073546F /* AppDelegate.swift */,
+				1743EB4820C0024B00D9A68D /* View Model */,
 				175EF80420B9DB7A0073546F /* Main.storyboard */,
+				175EF80020B9DB7A0073546F /* AppDelegate.swift */,
 				175EF83820BB2E840073546F /* CollectionViewSource.swift */,
 				175EF82E20B9DBE50073546F /* WebServices.swift */,
 				175EF80720B9DB7A0073546F /* Assets.xcassets */,
@@ -228,7 +229,6 @@
 				175EF83220B9F1950073546F /* Forecast.swift */,
 				17AFB04620BCF9FD00FB2D01 /* Location.swift */,
 				17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */,
-				1743EB4820C0024B00D9A68D /* View Model */,
 			);
 			path = Model;
 			sourceTree = "<group>";
