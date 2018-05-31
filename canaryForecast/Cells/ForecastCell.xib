@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ForecastCell" customModule="canaryForecast" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="403" height="136"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GjL-td-6Gw">
+                    <rect key="frame" x="0.0" y="0.0" width="403" height="136"/>
+                    <color key="backgroundColor" red="0.67289686121230619" green="0.77056031913924283" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temp" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7t-dF-xZC">
+                    <rect key="frame" x="339.5" y="57" width="47.5" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qhJ-RE-myf">
+                    <rect key="frame" x="16" y="58" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="l7t-dF-xZC" secondAttribute="trailing" constant="16" id="2AW-Y0-3hA"/>
+                <constraint firstItem="GjL-td-6Gw" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="6N6-0c-MTo"/>
+                <constraint firstItem="qhJ-RE-myf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="9tE-Bu-fpd"/>
+                <constraint firstItem="GjL-td-6Gw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ALm-Pa-qeH"/>
+                <constraint firstItem="qhJ-RE-myf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Tum-bg-Koh"/>
+                <constraint firstItem="GjL-td-6Gw" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="XRH-ZS-vGU"/>
+                <constraint firstItem="l7t-dF-xZC" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="npi-2Z-5el"/>
+                <constraint firstItem="GjL-td-6Gw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pbu-56-i0w"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="dayLabel" destination="qhJ-RE-myf" id="1iN-j5-pDf"/>
+                <outlet property="tempLabel" destination="l7t-dF-xZC" id="FEM-zx-A9g"/>
+                <outlet property="weatherImage" destination="GjL-td-6Gw" id="HWp-2N-yr6"/>
+            </connections>
+            <point key="canvasLocation" x="19.5" y="-197"/>
+        </view>
+    </objects>
+</document>

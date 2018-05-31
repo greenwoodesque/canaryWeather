@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1743EB3820BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3720BF7BF100D9A68D /* LocationSelectionTableViewController.swift */; };
+		1743EB3920BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3720BF7BF100D9A68D /* LocationSelectionTableViewController.swift */; };
+		1743EB3A20BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3720BF7BF100D9A68D /* LocationSelectionTableViewController.swift */; };
+		1743EB4020BFA68F00D9A68D /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3F20BFA68F00D9A68D /* TransitionAnimator.swift */; };
+		1743EB4120BFA68F00D9A68D /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3F20BFA68F00D9A68D /* TransitionAnimator.swift */; };
+		1743EB4220BFA68F00D9A68D /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB3F20BFA68F00D9A68D /* TransitionAnimator.swift */; };
+		1743EB4520BFD74E00D9A68D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB4420BFD74E00D9A68D /* ForecastViewModel.swift */; };
+		1743EB4620BFD74E00D9A68D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB4420BFD74E00D9A68D /* ForecastViewModel.swift */; };
+		1743EB4720BFD74E00D9A68D /* ForecastViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1743EB4420BFD74E00D9A68D /* ForecastViewModel.swift */; };
+		175EF80120B9DB7A0073546F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF80020B9DB7A0073546F /* AppDelegate.swift */; };
+		175EF80320B9DB7A0073546F /* ForecastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF80220B9DB7A0073546F /* ForecastViewController.swift */; };
+		175EF80620B9DB7A0073546F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175EF80420B9DB7A0073546F /* Main.storyboard */; };
+		175EF80820B9DB7A0073546F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 175EF80720B9DB7A0073546F /* Assets.xcassets */; };
+		175EF80B20B9DB7A0073546F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 175EF80920B9DB7A0073546F /* LaunchScreen.storyboard */; };
+		175EF81620B9DB7A0073546F /* canaryForecastTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF81520B9DB7A0073546F /* canaryForecastTests.swift */; };
+		175EF82120B9DB7A0073546F /* canaryForecastUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF82020B9DB7A0073546F /* canaryForecastUITests.swift */; };
+		175EF82F20B9DBE50073546F /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF82E20B9DBE50073546F /* WebServices.swift */; };
+		175EF83020B9DBE50073546F /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF82E20B9DBE50073546F /* WebServices.swift */; };
+		175EF83120B9DBE50073546F /* WebServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF82E20B9DBE50073546F /* WebServices.swift */; };
+		175EF83320B9F1950073546F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83220B9F1950073546F /* Forecast.swift */; };
+		175EF83420B9F1950073546F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83220B9F1950073546F /* Forecast.swift */; };
+		175EF83520B9F1950073546F /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83220B9F1950073546F /* Forecast.swift */; };
+		175EF83920BB2E840073546F /* CollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83820BB2E840073546F /* CollectionViewSource.swift */; };
+		175EF83A20BB2E850073546F /* CollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83820BB2E840073546F /* CollectionViewSource.swift */; };
+		175EF83B20BB2E850073546F /* CollectionViewSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF83820BB2E840073546F /* CollectionViewSource.swift */; };
+		175EF83D20BB31760073546F /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175EF83C20BB31760073546F /* ForecastCell.xib */; };
+		175EF83E20BB31760073546F /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175EF83C20BB31760073546F /* ForecastCell.xib */; };
+		175EF83F20BB31760073546F /* ForecastCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 175EF83C20BB31760073546F /* ForecastCell.xib */; };
+		175EF84120BB34030073546F /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84020BB34030073546F /* ForecastCell.swift */; };
+		175EF84220BB34040073546F /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84020BB34030073546F /* ForecastCell.swift */; };
+		175EF84320BB34040073546F /* ForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84020BB34030073546F /* ForecastCell.swift */; };
+		175EF84520BB66780073546F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84420BB66780073546F /* DateHelper.swift */; };
+		175EF84620BB66780073546F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84420BB66780073546F /* DateHelper.swift */; };
+		175EF84720BB66790073546F /* DateHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84420BB66780073546F /* DateHelper.swift */; };
+		175EF84920BB80840073546F /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84820BB80840073546F /* DayDetailViewController.swift */; };
+		175EF84A20BB80840073546F /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84820BB80840073546F /* DayDetailViewController.swift */; };
+		175EF84B20BB80840073546F /* DayDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84820BB80840073546F /* DayDetailViewController.swift */; };
+		175EF84D20BB868E0073546F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84C20BB868E0073546F /* Utils.swift */; };
+		175EF84E20BB868E0073546F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84C20BB868E0073546F /* Utils.swift */; };
+		175EF84F20BB868E0073546F /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175EF84C20BB868E0073546F /* Utils.swift */; };
+		17820F7420BDD43E00BE4A1D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17820F7320BDD43E00BE4A1D /* LocationManager.swift */; };
+		17820F7520BDD43E00BE4A1D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17820F7320BDD43E00BE4A1D /* LocationManager.swift */; };
+		17820F7620BDD43E00BE4A1D /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17820F7320BDD43E00BE4A1D /* LocationManager.swift */; };
+		17AFB04320BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04220BCBE9000FB2D01 /* LocationSearchViewController.swift */; };
+		17AFB04420BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04220BCBE9000FB2D01 /* LocationSearchViewController.swift */; };
+		17AFB04520BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04220BCBE9000FB2D01 /* LocationSearchViewController.swift */; };
+		17AFB04720BCF9FD00FB2D01 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04620BCF9FD00FB2D01 /* Location.swift */; };
+		17AFB04820BCF9FD00FB2D01 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04620BCF9FD00FB2D01 /* Location.swift */; };
+		17AFB04920BCF9FD00FB2D01 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04620BCF9FD00FB2D01 /* Location.swift */; };
+		17AFB04C20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */; };
+		17AFB04D20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */; };
+		17AFB04E20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */; };
+		17EBD07920BE23F60030A42E /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EBD07820BE23F60030A42E /* Managed.swift */; };
+		17EBD07A20BE23F60030A42E /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EBD07820BE23F60030A42E /* Managed.swift */; };
+		17EBD07B20BE23F70030A42E /* Managed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17EBD07820BE23F60030A42E /* Managed.swift */; };
+		17F1076720BC7D420032CE5A /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1076520BC7D420032CE5A /* DayCell.swift */; };
+		17F1076820BC7D420032CE5A /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1076520BC7D420032CE5A /* DayCell.swift */; };
+		17F1076920BC7D420032CE5A /* DayCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1076520BC7D420032CE5A /* DayCell.swift */; };
+		17F1076A20BC7D420032CE5A /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F1076620BC7D420032CE5A /* DayCell.xib */; };
+		17F1076B20BC7D420032CE5A /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F1076620BC7D420032CE5A /* DayCell.xib */; };
+		17F1076C20BC7D420032CE5A /* DayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17F1076620BC7D420032CE5A /* DayCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		175EF81220B9DB7A0073546F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175EF7F520B9DB7A0073546F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175EF7FC20B9DB7A0073546F;
+			remoteInfo = canaryForecast;
+		};
+		175EF81D20B9DB7A0073546F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 175EF7F520B9DB7A0073546F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 175EF7FC20B9DB7A0073546F;
+			remoteInfo = canaryForecast;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1743EB3720BF7BF100D9A68D /* LocationSelectionTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSelectionTableViewController.swift; sourceTree = "<group>"; };
+		1743EB3F20BFA68F00D9A68D /* TransitionAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		1743EB4420BFD74E00D9A68D /* ForecastViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewModel.swift; sourceTree = "<group>"; };
+		175EF7FD20B9DB7A0073546F /* canaryForecast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = canaryForecast.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		175EF80020B9DB7A0073546F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		175EF80220B9DB7A0073546F /* ForecastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastViewController.swift; sourceTree = "<group>"; };
+		175EF80520B9DB7A0073546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		175EF80720B9DB7A0073546F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		175EF80A20B9DB7A0073546F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		175EF80C20B9DB7A0073546F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175EF81120B9DB7A0073546F /* canaryForecastTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canaryForecastTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		175EF81520B9DB7A0073546F /* canaryForecastTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canaryForecastTests.swift; sourceTree = "<group>"; };
+		175EF81720B9DB7A0073546F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175EF81C20B9DB7A0073546F /* canaryForecastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = canaryForecastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		175EF82020B9DB7A0073546F /* canaryForecastUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = canaryForecastUITests.swift; sourceTree = "<group>"; };
+		175EF82220B9DB7A0073546F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		175EF82E20B9DBE50073546F /* WebServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServices.swift; sourceTree = "<group>"; };
+		175EF83220B9F1950073546F /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		175EF83820BB2E840073546F /* CollectionViewSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewSource.swift; sourceTree = "<group>"; };
+		175EF83C20BB31760073546F /* ForecastCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForecastCell.xib; sourceTree = "<group>"; };
+		175EF84020BB34030073546F /* ForecastCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastCell.swift; sourceTree = "<group>"; };
+		175EF84420BB66780073546F /* DateHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateHelper.swift; sourceTree = "<group>"; };
+		175EF84820BB80840073546F /* DayDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayDetailViewController.swift; sourceTree = "<group>"; };
+		175EF84C20BB868E0073546F /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		17820F7320BDD43E00BE4A1D /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		17AFB04220BCBE9000FB2D01 /* LocationSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchViewController.swift; sourceTree = "<group>"; };
+		17AFB04620BCF9FD00FB2D01 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		17AFB04B20BCFBCB00FB2D01 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		17EBD07820BE23F60030A42E /* Managed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Managed.swift; sourceTree = "<group>"; };
+		17F1076520BC7D420032CE5A /* DayCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCell.swift; sourceTree = "<group>"; };
+		17F1076620BC7D420032CE5A /* DayCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayCell.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		175EF7FA20B9DB7A0073546F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF80E20B9DB7A0073546F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF81920B9DB7A0073546F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1743EB4320BFD3C600D9A68D /* Helpers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				17EBD07820BE23F60030A42E /* Managed.swift */,
+				175EF84420BB66780073546F /* DateHelper.swift */,
+				175EF84C20BB868E0073546F /* Utils.swift */,
+			);
+			path = "Helpers and Extensions";
+			sourceTree = "<group>";
+		};
+		1743EB4820C0024B00D9A68D /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				1743EB4420BFD74E00D9A68D /* ForecastViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		175EF7F420B9DB7A0073546F = {
+			isa = PBXGroup;
+			children = (
+				175EF7FF20B9DB7A0073546F /* canaryForecast */,
+				175EF81420B9DB7A0073546F /* canaryForecastTests */,
+				175EF81F20B9DB7A0073546F /* canaryForecastUITests */,
+				175EF7FE20B9DB7A0073546F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		175EF7FE20B9DB7A0073546F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				175EF7FD20B9DB7A0073546F /* canaryForecast.app */,
+				175EF81120B9DB7A0073546F /* canaryForecastTests.xctest */,
+				175EF81C20B9DB7A0073546F /* canaryForecastUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		175EF7FF20B9DB7A0073546F /* canaryForecast */ = {
+			isa = PBXGroup;
+			children = (
+				1743EB4320BFD3C600D9A68D /* Helpers and Extensions */,
+				175EF83720BB23990073546F /* ViewControllers */,
+				175EF83620BA04F90073546F /* Model */,
+				175EF80020B9DB7A0073546F /* AppDelegate.swift */,
+				175EF80420B9DB7A0073546F /* Main.storyboard */,
+				175EF83820BB2E840073546F /* CollectionViewSource.swift */,
+				175EF82E20B9DBE50073546F /* WebServices.swift */,
+				175EF80720B9DB7A0073546F /* Assets.xcassets */,
+				17F1076D20BC94E20032CE5A /* Cells */,
+				17820F7320BDD43E00BE4A1D /* LocationManager.swift */,
+				1743EB3F20BFA68F00D9A68D /* TransitionAnimator.swift */,
+				175EF80920B9DB7A0073546F /* LaunchScreen.storyboard */,
+				175EF80C20B9DB7A0073546F /* Info.plist */,
+			);
+			path = canaryForecast;
+			sourceTree = "<group>";
+		};
+		175EF81420B9DB7A0073546F /* canaryForecastTests */ = {
+			isa = PBXGroup;
+			children = (
+				175EF81520B9DB7A0073546F /* canaryForecastTests.swift */,
+				175EF81720B9DB7A0073546F /* Info.plist */,
+			);
+			path = canaryForecastTests;
+			sourceTree = "<group>";
+		};
+		175EF81F20B9DB7A0073546F /* canaryForecastUITests */ = {
+			isa = PBXGroup;
+			children = (
+				175EF82020B9DB7A0073546F /* canaryForecastUITests.swift */,
+				175EF82220B9DB7A0073546F /* Info.plist */,
+			);
+			path = canaryForecastUITests;
+			sourceTree = "<group>";
+		};
+		175EF83620BA04F90073546F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				175EF83220B9F1950073546F /* Forecast.swift */,
+				17AFB04620BCF9FD00FB2D01 /* Location.swift */,
+				17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */,
+				1743EB4820C0024B00D9A68D /* View Model */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		175EF83720BB23990073546F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				175EF80220B9DB7A0073546F /* ForecastViewController.swift */,
+				175EF84820BB80840073546F /* DayDetailViewController.swift */,
+				17AFB04220BCBE9000FB2D01 /* LocationSearchViewController.swift */,
+				1743EB3720BF7BF100D9A68D /* LocationSelectionTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		17F1076D20BC94E20032CE5A /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				175EF84020BB34030073546F /* ForecastCell.swift */,
+				175EF83C20BB31760073546F /* ForecastCell.xib */,
+				17F1076520BC7D420032CE5A /* DayCell.swift */,
+				17F1076620BC7D420032CE5A /* DayCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		175EF7FC20B9DB7A0073546F /* canaryForecast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175EF82520B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecast" */;
+			buildPhases = (
+				175EF7F920B9DB7A0073546F /* Sources */,
+				175EF7FA20B9DB7A0073546F /* Frameworks */,
+				175EF7FB20B9DB7A0073546F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = canaryForecast;
+			productName = canaryForecast;
+			productReference = 175EF7FD20B9DB7A0073546F /* canaryForecast.app */;
+			productType = "com.apple.product-type.application";
+		};
+		175EF81020B9DB7A0073546F /* canaryForecastTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175EF82820B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecastTests" */;
+			buildPhases = (
+				175EF80D20B9DB7A0073546F /* Sources */,
+				175EF80E20B9DB7A0073546F /* Frameworks */,
+				175EF80F20B9DB7A0073546F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				175EF81320B9DB7A0073546F /* PBXTargetDependency */,
+			);
+			name = canaryForecastTests;
+			productName = canaryForecastTests;
+			productReference = 175EF81120B9DB7A0073546F /* canaryForecastTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		175EF81B20B9DB7A0073546F /* canaryForecastUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 175EF82B20B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecastUITests" */;
+			buildPhases = (
+				175EF81820B9DB7A0073546F /* Sources */,
+				175EF81920B9DB7A0073546F /* Frameworks */,
+				175EF81A20B9DB7A0073546F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				175EF81E20B9DB7A0073546F /* PBXTargetDependency */,
+			);
+			name = canaryForecastUITests;
+			productName = canaryForecastUITests;
+			productReference = 175EF81C20B9DB7A0073546F /* canaryForecastUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		175EF7F520B9DB7A0073546F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "David Greenwood";
+				TargetAttributes = {
+					175EF7FC20B9DB7A0073546F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					175EF81020B9DB7A0073546F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 175EF7FC20B9DB7A0073546F;
+					};
+					175EF81B20B9DB7A0073546F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 175EF7FC20B9DB7A0073546F;
+					};
+				};
+			};
+			buildConfigurationList = 175EF7F820B9DB7A0073546F /* Build configuration list for PBXProject "canaryForecast" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 175EF7F420B9DB7A0073546F;
+			productRefGroup = 175EF7FE20B9DB7A0073546F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				175EF7FC20B9DB7A0073546F /* canaryForecast */,
+				175EF81020B9DB7A0073546F /* canaryForecastTests */,
+				175EF81B20B9DB7A0073546F /* canaryForecastUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		175EF7FB20B9DB7A0073546F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175EF83D20BB31760073546F /* ForecastCell.xib in Resources */,
+				175EF80B20B9DB7A0073546F /* LaunchScreen.storyboard in Resources */,
+				175EF80820B9DB7A0073546F /* Assets.xcassets in Resources */,
+				17F1076A20BC7D420032CE5A /* DayCell.xib in Resources */,
+				175EF80620B9DB7A0073546F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF80F20B9DB7A0073546F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F1076B20BC7D420032CE5A /* DayCell.xib in Resources */,
+				175EF83E20BB31760073546F /* ForecastCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF81A20B9DB7A0073546F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				17F1076C20BC7D420032CE5A /* DayCell.xib in Resources */,
+				175EF83F20BB31760073546F /* ForecastCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		175EF7F920B9DB7A0073546F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175EF84920BB80840073546F /* DayDetailViewController.swift in Sources */,
+				175EF83320B9F1950073546F /* Forecast.swift in Sources */,
+				17AFB04C20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */,
+				17820F7420BDD43E00BE4A1D /* LocationManager.swift in Sources */,
+				17F1076720BC7D420032CE5A /* DayCell.swift in Sources */,
+				17EBD07920BE23F60030A42E /* Managed.swift in Sources */,
+				175EF84D20BB868E0073546F /* Utils.swift in Sources */,
+				175EF80320B9DB7A0073546F /* ForecastViewController.swift in Sources */,
+				17AFB04720BCF9FD00FB2D01 /* Location.swift in Sources */,
+				1743EB4520BFD74E00D9A68D /* ForecastViewModel.swift in Sources */,
+				1743EB3820BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */,
+				175EF80120B9DB7A0073546F /* AppDelegate.swift in Sources */,
+				1743EB4020BFA68F00D9A68D /* TransitionAnimator.swift in Sources */,
+				175EF82F20B9DBE50073546F /* WebServices.swift in Sources */,
+				175EF84120BB34030073546F /* ForecastCell.swift in Sources */,
+				175EF84520BB66780073546F /* DateHelper.swift in Sources */,
+				17AFB04320BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */,
+				175EF83920BB2E840073546F /* CollectionViewSource.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF80D20B9DB7A0073546F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175EF84A20BB80840073546F /* DayDetailViewController.swift in Sources */,
+				17F1076820BC7D420032CE5A /* DayCell.swift in Sources */,
+				17820F7520BDD43E00BE4A1D /* LocationManager.swift in Sources */,
+				175EF84220BB34040073546F /* ForecastCell.swift in Sources */,
+				1743EB4620BFD74E00D9A68D /* ForecastViewModel.swift in Sources */,
+				175EF83020B9DBE50073546F /* WebServices.swift in Sources */,
+				17EBD07A20BE23F60030A42E /* Managed.swift in Sources */,
+				1743EB4120BFA68F00D9A68D /* TransitionAnimator.swift in Sources */,
+				175EF83A20BB2E850073546F /* CollectionViewSource.swift in Sources */,
+				175EF84620BB66780073546F /* DateHelper.swift in Sources */,
+				17AFB04420BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */,
+				175EF83420B9F1950073546F /* Forecast.swift in Sources */,
+				175EF81620B9DB7A0073546F /* canaryForecastTests.swift in Sources */,
+				1743EB3920BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */,
+				175EF84E20BB868E0073546F /* Utils.swift in Sources */,
+				17AFB04820BCF9FD00FB2D01 /* Location.swift in Sources */,
+				17AFB04D20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		175EF81820B9DB7A0073546F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				175EF84B20BB80840073546F /* DayDetailViewController.swift in Sources */,
+				17F1076920BC7D420032CE5A /* DayCell.swift in Sources */,
+				17820F7620BDD43E00BE4A1D /* LocationManager.swift in Sources */,
+				175EF84320BB34040073546F /* ForecastCell.swift in Sources */,
+				1743EB4720BFD74E00D9A68D /* ForecastViewModel.swift in Sources */,
+				175EF83120B9DBE50073546F /* WebServices.swift in Sources */,
+				17EBD07B20BE23F70030A42E /* Managed.swift in Sources */,
+				1743EB4220BFA68F00D9A68D /* TransitionAnimator.swift in Sources */,
+				175EF83B20BB2E850073546F /* CollectionViewSource.swift in Sources */,
+				175EF84720BB66790073546F /* DateHelper.swift in Sources */,
+				17AFB04520BCBE9000FB2D01 /* LocationSearchViewController.swift in Sources */,
+				175EF83520B9F1950073546F /* Forecast.swift in Sources */,
+				175EF82120B9DB7A0073546F /* canaryForecastUITests.swift in Sources */,
+				1743EB3A20BF7BF100D9A68D /* LocationSelectionTableViewController.swift in Sources */,
+				175EF84F20BB868E0073546F /* Utils.swift in Sources */,
+				17AFB04920BCF9FD00FB2D01 /* Location.swift in Sources */,
+				17AFB04E20BCFBCB00FB2D01 /* Model.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		175EF81320B9DB7A0073546F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 175EF7FC20B9DB7A0073546F /* canaryForecast */;
+			targetProxy = 175EF81220B9DB7A0073546F /* PBXContainerItemProxy */;
+		};
+		175EF81E20B9DB7A0073546F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 175EF7FC20B9DB7A0073546F /* canaryForecast */;
+			targetProxy = 175EF81D20B9DB7A0073546F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		175EF80420B9DB7A0073546F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				175EF80520B9DB7A0073546F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		175EF80920B9DB7A0073546F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				175EF80A20B9DB7A0073546F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		175EF82320B9DB7A0073546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		175EF82420B9DB7A0073546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		175EF82620B9DB7A0073546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SD7TAKB7PQ;
+				INFOPLIST_FILE = canaryForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		175EF82720B9DB7A0073546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SD7TAKB7PQ;
+				INFOPLIST_FILE = canaryForecast/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecast;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		175EF82920B9DB7A0073546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = canaryForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/canaryForecast.app/canaryForecast";
+			};
+			name = Debug;
+		};
+		175EF82A20B9DB7A0073546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = canaryForecastTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecastTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/canaryForecast.app/canaryForecast";
+			};
+			name = Release;
+		};
+		175EF82C20B9DB7A0073546F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = canaryForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = canaryForecast;
+			};
+			name = Debug;
+		};
+		175EF82D20B9DB7A0073546F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = canaryForecastUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dgtraining.canaryForecastUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = canaryForecast;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		175EF7F820B9DB7A0073546F /* Build configuration list for PBXProject "canaryForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175EF82320B9DB7A0073546F /* Debug */,
+				175EF82420B9DB7A0073546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175EF82520B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175EF82620B9DB7A0073546F /* Debug */,
+				175EF82720B9DB7A0073546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175EF82820B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecastTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175EF82920B9DB7A0073546F /* Debug */,
+				175EF82A20B9DB7A0073546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		175EF82B20B9DB7A0073546F /* Build configuration list for PBXNativeTarget "canaryForecastUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				175EF82C20B9DB7A0073546F /* Debug */,
+				175EF82D20B9DB7A0073546F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		17AFB04A20BCFBCB00FB2D01 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				17AFB04B20BCFBCB00FB2D01 /* Model.xcdatamodel */,
+			);
+			currentVersion = 17AFB04B20BCFBCB00FB2D01 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 175EF7F520B9DB7A0073546F /* Project object */;
+}
