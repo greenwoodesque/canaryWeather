@@ -95,20 +95,20 @@ extension ForecastUnmanaged {
             let icon = day["icon"] as? String
             let sunriseTime = day["sunriseTime"] as? TimeInterval
             let sunsetTime = day["sunsetTime"] as? TimeInterval
-            let precipProbability = day["precipProbability"] as? Float
+            let precipProbability = day["precipProbability"] as? NSNumber
             let precipType = day["precipType"] as? String
-            let temperatureHigh = day["temperatureHigh"] as? Float
-            let temperatureLow = day["temperatureLow"] as? Float
-            let visibility = day["visibility"] as? Float
-            let humidity = day["humidity"] as? Float
-            let uvIndex = day["uvIndex"] as? Float
-            let cloudCover = day["cloudCover"] as? Float
+            let temperatureHigh = day["temperatureHigh"] as? NSNumber
+            let temperatureLow = day["temperatureLow"] as? NSNumber
+            let visibility = day["visibility"] as? NSNumber
+            let humidity = day["humidity"] as? NSNumber
+            let uvIndex = day["uvIndex"] as? NSNumber
+            let cloudCover = day["cloudCover"] as? NSNumber
 
             let date = Date(timeIntervalSince1970: time)
             let sunrise = dateFromOptionalTime(sunriseTime)
             let sunset = dateFromOptionalTime(sunsetTime)
 
-            fullForecast.append(ForecastUnmanaged(time: date, summary: summary, icon: icon, sunriseTime: sunrise, sunsetTime: sunset, precipProbability: precipProbability, precipType: precipType, temperatureHigh: temperatureHigh, temperatureLow: temperatureLow, visibility: visibility, humidity: humidity, uvIndex: uvIndex, cloudCover: cloudCover))
+            fullForecast.append(ForecastUnmanaged(time: date, summary: summary, icon: icon, sunriseTime: sunrise, sunsetTime: sunset, precipProbability: precipProbability?.floatValue, precipType: precipType, temperatureHigh: temperatureHigh?.floatValue, temperatureLow: temperatureLow?.floatValue, visibility: visibility?.floatValue, humidity: humidity?.floatValue, uvIndex: uvIndex?.floatValue, cloudCover: cloudCover?.floatValue))
         }
         return fullForecast
     }
