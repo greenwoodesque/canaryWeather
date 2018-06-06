@@ -102,7 +102,7 @@ class ForecastViewModel {
                                 var forecasts = [Forecast]()
                                 for item in items {
                                     let predicate = NSPredicate(format: "%K == %@ && %K BEGINSWITH %@", #keyPath(Forecast.time), item.time as NSDate, #keyPath(Forecast.location.locality), location.locality)
-                                    let retrievedForecast = Forecast.findOrCreate(in: s.managedObjectContext, matching: predicate) { forecast in
+                                    let retrievedForecast = Forecast.resetOrCreate(in: s.managedObjectContext, matching: predicate) { forecast in
                                         forecast.set(with: item, for: location)
                                     }
                                     forecasts.append(retrievedForecast)
